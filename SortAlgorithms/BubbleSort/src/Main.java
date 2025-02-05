@@ -1,4 +1,12 @@
 public class Main {
+
+    /*
+    Characteristics of Bubble Sort
+    1. In-place algorithm
+    2. O(n^2) time complexity - quadratic
+    3. Algorithm degrades quickly
+    */
+
     public static void main(String[] args) {
         int[] intArray = { 20, 35, -15, 7, 55, 1, -22 };
 

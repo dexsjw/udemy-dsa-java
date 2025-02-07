@@ -1,10 +1,10 @@
 public class Main {
     /*
-    Characteristics of Selection Sort
-    1. In-place algorithm
-    2. O(n^2) time complexity - quadratic
-    3. Doesn't require as much swapping as Bubble Sort
-    4. Unstable algorithm
+        Characteristics of Selection Sort
+        1. In-place algorithm
+        2. O(n^2) time complexity - quadratic
+        3. Doesn't require as much swapping as Bubble Sort
+        4. Unstable algorithm
     */
 
     public static void main(String[] args) {

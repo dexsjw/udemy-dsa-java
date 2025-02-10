@@ -1,6 +1,6 @@
 public class Main {
     /*
-        Characteristics of Insertion Sort
+        Characteristics of Insertion Sort:
         1. In-place algorithm
         2. O(n^2) time complexity - quadratic
         3. Stable algorithm

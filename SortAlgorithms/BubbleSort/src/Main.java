@@ -1,10 +1,10 @@
 public class Main {
-
     /*
         Characteristics of Bubble Sort
         1. In-place algorithm
         2. O(n^2) time complexity - quadratic
         3. Algorithm degrades quickly
+        4. Stable algorithm
     */
 
     public static void main(String[] args) {

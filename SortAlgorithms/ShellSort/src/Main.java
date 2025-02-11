@@ -40,6 +40,38 @@ public class Main {
     */
 
     public static void main(String[] args) {
+        int[] intArray = { 20, 35, -15, 7, 55, 1, -22 };
 
+        for (int gap = intArray.length / 2; gap > 0; gap /= 2) {
+
+            // "i" is used to indicate the starting index for comparison with index 0
+            // e.g. comparing elements at position 3 and 0, then incrementing "i" by 1
+            // and comparing elements at position 4 and 1, 5 and 2 etc
+            for (int i = gap; i < intArray.length; i++) {
+                int newElement = intArray[i];
+
+                // using another variable "j" so that it will not affect the count of "i"
+                // "j" is used to track if there are any more elements at gap distance away
+                // e.g. { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 } with gap = 3
+                // starting at index j = 9,
+                // 1. compare 9 and 6
+                // 2. compare 6 and 3
+                // 3. compare 3 and 0
+                // 4. next iteration after i++, j = 10
+                // Also, if "intArray[j - gap] > newElement == false" it means that elements to the left are smaller than newElement
+                // and no point in checking further
+                int j = i;
+                while (j >= gap && intArray[j - gap] > newElement) {
+                    intArray[j] = intArray[j - gap];
+                    j -= gap;
+                }
+                intArray[j] = newElement;
+            }
+
+        }
+
+        for (int j : intArray) {
+            System.out.println(j);
+        }
     }
 }

@@ -7,8 +7,8 @@ public class Main {
         4. Splitting phase leads to faster sorting during the Merging phase
         5. Splitting is logical. We don't create new arrays
         6. NOT an in-place algorithm
-        6. O(n*logn) time complexity - base 2. We're repeatedly dividing the array in half during the splitting phase
-        7. Stable algorithm
+        7. O(n*logn) time complexity - base 2. We're repeatedly dividing the array in half during the splitting phase
+        8. Stable algorithm
 
         Notes:
         1. Splitting Phase

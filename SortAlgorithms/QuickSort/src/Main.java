@@ -136,6 +136,7 @@ public class Main {
             }
             if (i < j) {
                 input[i] = input[j];
+                ++i; // Edit
             }
 
             System.out.println("i: " + i);
@@ -144,6 +145,7 @@ public class Main {
             }
             if (i < j) {
                 input[j] = input[i];
+                --j; // Edit
             }
         }
 
@@ -169,5 +171,8 @@ public class Main {
 //          For the first iteration,
 //          after -22 has been placed in index 0, -22 will be checked again
 //          after  35 has been placed in index 6,  35 will be checked again
+//        Edit:
+//        - Implemented increment / decrement after the replacement
+//        - Elements in the replaced position will not be checked again
     }
 }

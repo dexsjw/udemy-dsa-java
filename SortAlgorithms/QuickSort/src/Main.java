@@ -30,6 +30,8 @@ public class Main {
     }
 
     public static void quickSort(int[] input, int start, int end) {
+        // If there is only 1 element or less, there is nothing to sort
+        // and element is in its sorted position
         if (end - start < 2) {
             return;
         }

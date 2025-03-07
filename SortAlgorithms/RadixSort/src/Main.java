@@ -25,6 +25,20 @@ public class Main {
         10. Stable algorithm - key to making Radix Sort work
     */
 
+    /*
+        Characteristics of STABLE Counting Sort:
+        1. Requires extra steps
+        2. Can calculate where values should be written back to the original array
+        3. Writing the values into the array in backwards order ensures stability
+        4. This works because we traverse the input array from right to left, and we write duplicate values into the
+           temp array from right to left
+        5. If we know that duplicate values will go into positions 3 and 4, we write the rightmost value in the
+           input array into position 4, and the leftmost value into position 3
+        6. This preserves the relative positioning of duplicate values
+        7. By adjusting the counting array after the initial pass, we can map values to indices in the temp array
+        8. Can also use linked lists to make counting sort stable
+    */
+
     public static void main(String[] args) {
 
     }

@@ -18,11 +18,11 @@ public class Main {
         5. Start at the rightmost position
         6. Must use a stable sort algorithm at each stage
 
-        6. NOT an in-place algorithm
+        6. Counting sort is often used as the sort algorithm for radix sort - must be stable counting sort
         7. O(n) time complexity - can achieve this because we're making assumptions about the data we're sorting
-        8. If we want the sort to be stable, we have to do some extra steps
-        9. Length of counting array depends on range of values we have in input array
-        10. Best used when range of values in input array is around same length as input array
+        8. Even so, it often runs slower than O(n*logn) algorithms because of the overhead involved
+        9. In-place depends on which sort algorithm you use
+        10. Stable algorithm - key to making Radix Sort work
     */
 
     public static void main(String[] args) {

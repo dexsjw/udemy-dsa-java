@@ -12,6 +12,23 @@ public class Main {
         8. If we want the sort to be stable, we have to do some extra steps
         9. Length of counting array depends on range of values we have in input array
         10. Best used when range of values in input array is around same length as input array
+        11. Unstable algorithm
+    */
+
+    /*
+        Characteristics of STABLE Counting Sort:
+        1. Requires extra steps
+        2. Can calculate where values should be written back to the original array
+        3. Writing the values into the array in backwards order ensures stability
+
+        4. Only works with non-negative discrete values (can't work with floats, strings etc)
+        5. Values must be within a specific range
+
+        6. NOT an in-place algorithm
+        7. O(n) time complexity - can achieve this because we're making assumptions about the data we're sorting
+        8. If we want the sort to be stable, we have to do some extra steps
+        9. Length of counting array depends on range of values we have in input array
+        10. Best used when range of values in input array is around same length as input array
     */
 
     public static void main(String[] args) {
